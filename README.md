@@ -3,6 +3,8 @@
 
 # UNDER CONSTRUCTION, maalesef daha çalışmıyor bug bulduk
 
+# Yine de denemek isteyen varsa kendi kodunda 9931*4 kez loop koysun arkadaşlar (9931*4 task var yani)
+
 THE-1 Data generator and tester for the CENG140 (Programming in C) Section 3 students
 
 **Respects to Gokturk Ucoluk (Taksitle satan)**

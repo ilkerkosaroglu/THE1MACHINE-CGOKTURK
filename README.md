@@ -1,4 +1,7 @@
 # THE1MACHINE-CGOKTURK
+--------
+
+# UNDER CONSTRUCTION, maalesef daha çalışmıyor bug bulduk
 
 THE-1 Data generator and tester for the CENG140 (Programming in C) Section 3 students
 

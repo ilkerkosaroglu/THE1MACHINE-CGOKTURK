@@ -87,8 +87,11 @@ int main(){
   }
   cout<<endl;
   // cout<<"all tests are out of ?/"<<lines<<endl;
+  ll pa=corL+corn+corp+corr;
   cout<<"correct L:"<<corL<<"\t"<<" correct n:"<<corn<<"\t"<<" correct p:"<<corp<<"\t"<<" correct r:"<<corr<<endl;
-  cout<<"total of "<<corL+corn+corp+corr<<"/"<<lines*4<<" correct computations"<<endl;
+  cout<<"total of "<<pa<<"/"<<lines*4<<" correct computations"<<endl;
+  cout.precision(4);
+  cout<<(ld)pa*100/(lines*4)<<"% Success"<<endl;
 
 
   return 0;

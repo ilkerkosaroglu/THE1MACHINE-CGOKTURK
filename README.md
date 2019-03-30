@@ -1,10 +1,6 @@
 # THE1MACHINE-CGOKTURK
 --------
 
-# UNDER CONSTRUCTION, maalesef daha çalışmıyor bug bulduk
-
-# Yine de denemek isteyen varsa kendi koduna(main'e) 9931\*4 kez loop koysun arkadaşlar (9931\*4 task var yani)
-
 THE-1 Data generator and tester for the CENG140 (Programming in C) Section 3 students
 
 **Respects to Gokturk Ucoluk (Taksitle satan)**
@@ -22,8 +18,8 @@ Note that "yourfinalexecutable.out" is something like.:    **a.out** (your compi
 (if you want, you can compile the code yourself. Source code is available in the SourceCode folder. This is highly optional)
 To generate the "the1machine.gokturk" file (and the data that comes with it) , run the following commands:
 ```bash
-g++ DataMachine.cpp -o the1machine.gokturk && ./the1machine.gokturk && g++ checker.cpp -o the1machine.gokturk
-./the1machine.gokturk && g++ Tester.cpp -o the1machine.gokturk
+g++ DataMachine.cpp -o sub.o k && ./sub.o && g++ checker.cpp -o sub2.o
+./sub2.o && g++ Tester.cpp -o the1machine.gokturk
 ```
 
 and that's it!

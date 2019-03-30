@@ -18,7 +18,7 @@ Note that "yourfinalexecutable.out" is something like.:    **a.out** (your compi
 (if you want, you can compile the code yourself. Source code is available in the SourceCode folder. This is highly optional)
 To generate the "the1machine.gokturk" file (and the data that comes with it) , run the following commands:
 ```bash
-g++ DataMachine.cpp -o sub.o   && ./sub.o && g++ checker.cpp -o sub2.o
+g++ DataMachine.cpp -o sub.o && ./sub.o && g++ checker.cpp -o sub2.o
 ./sub2.o && g++ Tester.cpp -o the1machine.gokturk
 ```
 

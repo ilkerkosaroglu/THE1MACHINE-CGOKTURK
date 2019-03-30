@@ -5,7 +5,7 @@ THE-1 Data generator and tester for the CENG140 (Programming in C) Section 3 stu
 
 **Respects to Gokturk Ucoluk (Taksitle satan)**
 
-To use this tester, first, copy the "data1G.txt", "the1machine.gokturk" and "starttest.py" files to your computer where your compiled code resides, then, in your terminal, type the following command:
+To use this tester, first, copy the "data1G.txt", "the1machine.gokturk" and "starttest.py" files from "MustFiles" folder to your computer where your compiled code resides, then, in your terminal, type the following command:
 ```sh
 python starttest.py yourexecutable.out
 ```

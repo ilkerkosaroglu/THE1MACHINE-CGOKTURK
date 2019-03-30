@@ -14,7 +14,8 @@ int main(){
   // freopen("input.txt", "r", stdin);
   freopen("output.txt", "w", stdout);
   ios::sync_with_stdio(false);cin.tie(0);cout<<fixed;
-  cout.precision(17);
+  cout.precision(6);
+  srand (time(NULL));
   // ll n=random.randint(1,5);
   ll n,count=0,cor=0;
   double L,p,r,E;
@@ -29,7 +30,7 @@ int main(){
     while(n<421){
       for(int k=1;k<51;k++){
         int chance=rand()%10;
-        if(chance<8)continue;
+        if(chance<9)continue;
         r=(double)k/1200;
         // cout << r << endl;
         // cout << k << endl;

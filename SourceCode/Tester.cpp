@@ -15,7 +15,7 @@ int main(){
   // freopen("data1G.txt", "r", stdin);
   std::ifstream in("data1G.txt");
   ios::sync_with_stdio(false);cin.tie(0);cout<<fixed;
-  cout.precision(17);
+  cout.precision(7);
   ll linecountfile,cor=0;
   ld L,n,p,r;
   ld Lsr,nsr,psr,rsr;
@@ -26,13 +26,13 @@ int main(){
   REP(i,1,lines*4){
     int op=(i-1)%4;
     in >> L >> n >> p >> r;
-    cout<< "\n--\\-----*****-----/--\n"<<endl;
+    cout<< "\n--\\-----*****-----/--"<<" Test no: "<<i<<"\n"<<endl;
     if(op==0){
       cout << 1 << endl;
       cout << n <<" "<<p<<" "<<r<<" "<<endl;
       cin >> Lsr;
-      cout<<"Lsr: "<<Lsr<<endl;
-      ld h=calc(Lsr,n,p,r);
+      // cout<<"Lsr: "<<Lsr<<endl;
+      ld h=L-Lsr;
       cout<<"Your computation: "<<Lsr<<", errorrate: "<<h;
       if(h<Eps && -h<Eps){
         corL++;
@@ -46,7 +46,7 @@ int main(){
       cout << 2 << endl;
       cout << L <<" "<<p<<" "<<r<<" "<<endl;
       cin >> nsr;
-      ld h=calc(L,nsr,p,r);
+      ld h=n-nsr;
       cout<<"Your computation: "<<nsr<<", errorrate: "<<h;
       if(h<Eps && -h<Eps){
         corn++;
@@ -60,7 +60,7 @@ int main(){
       cout << 3 << endl;
       cout << L <<" "<<n<<" "<<r<<" "<<endl;
       cin >> psr;
-      ld h=calc(L,n,psr,r);
+      ld h=p-psr;
       cout<<"Your computation: "<<psr<<", errorrate: "<<h;
       if(h<Eps && -h<Eps){
         corp++;
@@ -74,7 +74,7 @@ int main(){
       cout << 4 << endl;
       cout << L <<" "<<n<<" "<<p<<" "<<endl;
       cin >> rsr;
-      ld h=calc(L,n,p,rsr);
+      ld h=r-rsr;
       cout<<"Your computation: "<<rsr<<", errorrate: "<<h;
       if(h<Eps && -h<Eps){
         corr++;
@@ -86,12 +86,12 @@ int main(){
     }
   }
   cout<<endl;
+  cout<<endl;
+  cout<<endl;
+  cout<<endl;
   // cout<<"all tests are out of ?/"<<lines<<endl;
-  ll pa=corL+corn+corp+corr;
   cout<<"correct L:"<<corL<<"\t"<<" correct n:"<<corn<<"\t"<<" correct p:"<<corp<<"\t"<<" correct r:"<<corr<<endl;
-  cout<<"total of "<<pa<<"/"<<lines*4<<" correct computations"<<endl;
-  cout.precision(4);
-  cout<<(ld)pa*100/(lines*4)<<"% Success"<<endl;
+  cout<<"total of "<<corL+corn+corp+corr<<"/"<<lines*4<<" correct computations"<<endl;
 
 
   return 0;

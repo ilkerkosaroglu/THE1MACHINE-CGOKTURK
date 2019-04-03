@@ -4,9 +4,11 @@ import os
 print ("testing.. this may take a while (a couple of seconds)")
 arguments=sys.argv[1:]
 pref="./" if os.name != "nt" else ".\\"
+plat=1#win
 if os.name!="nt":
     os.system("chmod"+" 777 "+pref+"the1machine.gokturk")
-p = Popen([pref+'the1machine.gokturk'], shell=True, stdout=PIPE, stdin=PIPE)
+    plat=0#linux
+p = Popen([pref+'the1machine.gokturk'+(".exe" if plat==1 else "")], shell=True, stdout=PIPE, stdin=PIPE)
 OUT=[]
 WR=[]
 x=p.stdout.readline().strip()

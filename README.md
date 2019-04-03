@@ -3,7 +3,9 @@
 
 THE-1 Data generator and tester for the CENG140 (Programming in C) Section 3 students
 
-**Respects to Gokturk Ucoluk (Taksitle satan)**
+**Respects to Gokturk Ucoluk (Taksitle satan)**   
+
+ **If testing takes too long, use the smalldata instead. (you should rename it to data1G first.**
 
 To use this tester, first, copy the "data1G.txt", "the1machine.gokturk" (on windows, you need the the1machine.gokturk.exe file) and "starttest.py" files from "MustFiles" folder to your computer where your compiled code resides, then, in your terminal, type the following command on linux:
 ```sh
@@ -14,6 +16,8 @@ or if you are on windows,
 python starttest.py yourexecutable.exe
 ```
 and it should work.
+
+**If testing takes too long, use the smalldata instead. (you should rename it to data1G first.**
 
 Note that "yourexecutable.out" is something like.:    **a.out** (your compiled the1.c file)
 

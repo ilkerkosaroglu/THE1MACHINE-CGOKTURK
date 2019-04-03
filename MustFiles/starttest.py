@@ -1,8 +1,12 @@
 from subprocess import Popen, PIPE
 import sys
-print "testing.. this may take a while (a couple of seconds)"
+import os
+print ("testing.. this may take a while (a couple of seconds)")
 arguments=sys.argv[1:]
-p = Popen(['./the1machine.gokturk'], shell=True, stdout=PIPE, stdin=PIPE)
+pref="./" if os.name != "nt" else ".\\"
+if os.name!="nt":
+    os.system("chmod"+" 777 "+pref+"the1machine.gokturk")
+p = Popen([pref+'the1machine.gokturk'], shell=True, stdout=PIPE, stdin=PIPE)
 OUT=[]
 WR=[]
 x=p.stdout.readline().strip()
@@ -16,7 +20,7 @@ OUT.append( x3 )
 OUT.append( x4 )
 OUT.append( x5 )
 while x4:
-    the = Popen(['./'+arguments[0]], shell=True, stdout=PIPE, stdin=PIPE)
+    the = Popen([pref+arguments[0]], shell=True, stdout=PIPE, stdin=PIPE)
     the.stdin.write(x4+"\n")
     the.stdin.write(x5+"\n")
     the.stdin.flush()
@@ -47,6 +51,6 @@ while x4:
 x=p.stdout.readline().strip()
 OUT.append( "\033[93m"+x+"\033[00m" )
 for i in OUT:
-    print i
-print "\nlast 25 (or less) wrong cases:\n-----"
-print WR[-25:]
+    print (i)
+print ("\nlast 25 (or less) wrong cases:\n-----")
+print (WR[-25:])

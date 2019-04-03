@@ -27,8 +27,11 @@ g++ DataMachine.cpp -o sub.o && ./sub.o && g++ checker.cpp -o sub2.o
 ```
 or if you are on Windows,
 ```bash
-g++ DataMachine.cpp -o sub.exe && sub.exe && g++ checker.cpp -o sub2.exe
-sub2.exe && g++ Tester.cpp -o the1machine.gokturk.exe
+g++ DataMachine.cpp -o sub.exe
+sub.exe 
+g++ checker.cpp -o sub2.exe
+sub2.exe 
+g++ Tester.cpp -o the1machine.gokturk.exe
 ```
 and that's it!
 

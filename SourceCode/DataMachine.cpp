@@ -14,7 +14,7 @@ int main(){
   // freopen("input.txt", "r", stdin);
   freopen("output.txt", "w", stdout);
   ios::sync_with_stdio(false);cin.tie(0);cout<<fixed;
-  cout.precision(6);
+  cout.precision(15);
   srand (time(NULL));
   // ll n=random.randint(1,5);
   ll n,count=0,cor=0;

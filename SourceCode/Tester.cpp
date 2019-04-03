@@ -15,7 +15,7 @@ int main(){
   // freopen("data1G.txt", "r", stdin);
   std::ifstream in("data1G.txt");
   ios::sync_with_stdio(false);cin.tie(0);cout<<fixed;
-  cout.precision(7);
+  cout.precision(15);
   ll linecountfile,cor=0;
   ld L,n,p,r;
   ld Lsr,nsr,psr,rsr;
@@ -39,7 +39,9 @@ int main(){
         cout<<" PASSED "<<endl;
       }else{
         cout<<"--\n--!NOT ACCURATE!-!"<<endl;
+          cout.precision(6);
         cout<<"Expected answer: "<< L <<endl;
+          cout.precision(15);
       }
     }
     if(op==1){
@@ -53,7 +55,9 @@ int main(){
         cout<<" PASSED "<<endl;
       }else{
         cout<<"--\n--!NOT ACCURATE!-!"<<endl;
+          cout.precision(6);
         cout<<"Expected answer: "<< n <<endl;
+          cout.precision(15);
       }
     }
     if(op==2){
@@ -67,7 +71,9 @@ int main(){
         cout<<" PASSED "<<endl;
       }else{
         cout<<"--\n--!NOT ACCURATE!-!"<<endl;
+          cout.precision(6);
         cout<<"Expected answer: "<< p <<endl;
+          cout.precision(15);
       }
     }
     if(op==3){
@@ -81,7 +87,9 @@ int main(){
         cout<<" PASSED "<<endl;
       }else{
         cout<<"--\n--!NOT ACCURATE!-!"<<endl;
+          cout.precision(6);
         cout<<"Expected answer: "<< r <<endl;
+          cout.precision(15);
       }
     }
   }
